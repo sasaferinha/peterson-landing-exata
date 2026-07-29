@@ -64,3 +64,23 @@
   .portrait{margin-left:0;width:100%;border-left:0;border-radius:34% 34% 0 0}
   .portrait:before{background:linear-gradient(180deg,var(--dark) 0,transparent 18%)}
 }
+
+/* Página e retrato mais compactos */
+@media(min-width:901px){
+  header{height:80px}
+  .hero{min-height:auto;padding-top:92px;grid-template-rows:auto auto auto}
+  .hero-copy,.portrait{height:clamp(560px,72vh,650px)}
+  .hero-copy{padding-top:52px;padding-bottom:65px}
+  .portrait img{object-position:center 15%}
+  .stats{margin-top:-52px}
+  .subjects{margin-top:34px;padding:18px}
+  .about-copy{padding-top:72px;padding-bottom:72px}
+  .meals{padding-top:72px;padding-bottom:72px}
+  .final{margin-top:62px;margin-bottom:62px;padding-top:52px;padding-bottom:52px}
+  body>footer{padding-top:28px;padding-bottom:28px}
+}
+@media(max-width:600px){
+  .portrait{height:430px}
+  .subjects{margin-top:34px;padding:17px 12px}
+  .stats{margin-top:-24px}
+}

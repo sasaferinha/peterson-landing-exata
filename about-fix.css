@@ -35,3 +35,20 @@
 .testimonials blockquote,
 .final,
 .floating-whatsapp{border-radius:0}
+
+/* Tipografia compacta para celular */
+@media(max-width:600px){
+  .hero h1{font-size:42px;line-height:1.02;letter-spacing:-1px;margin:18px 0}
+  .about h2,.meals h2,.final h2{font-size:34px;line-height:1.08;letter-spacing:-1px;margin:18px 0}
+  .hero-copy>p:not(.overline),.about-copy>p:not(.overline),.meal-copy>p:not(.overline),.final>p:not(.overline){font-size:15px;line-height:1.5}
+  .overline{font-size:9px!important;letter-spacing:3px}
+  .pill{min-height:46px;padding:0 20px;font-size:14px}
+  .hero-copy{padding:45px 20px 55px}
+  .about-copy{padding:55px 22px}
+  .meals{padding:60px 4vw}
+  .meal-copy{padding:10px 8px 28px}
+  .menu-cards h3{font-size:24px}
+  .menu-cards article{padding:22px}
+  .final{margin:45px 4%;padding:38px 18px}
+  .logo b{font-size:18px}.logo i{width:46px;height:46px;font-size:20px}
+}

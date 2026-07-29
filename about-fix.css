@@ -7,3 +7,15 @@
 .meal-copy>p:not(.overline){max-width:700px;margin-left:auto;margin-right:auto}
 .meal-copy .actions{justify-content:center}
 .menu-cards,.meal-benefits{grid-column:1}
+.hero{padding-top:108px;background:radial-gradient(circle at 75% 25%,#34412e 0,transparent 34%),var(--dark)}
+.hero-copy{padding-top:95px;position:relative;z-index:2}
+.portrait{border-radius:58% 0 0 0;border-left:1px solid var(--gold);position:relative}
+.portrait:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,var(--dark) 0,transparent 13%,transparent 100%);pointer-events:none}
+.hero-badges{position:absolute;z-index:3;right:2.5%;top:42%;display:grid;gap:16px}
+.hero-badges aside{width:210px;padding:18px 20px;border:1px solid var(--gold);border-radius:20px;background:#17251be8;box-shadow:0 12px 26px #0004}
+.hero-badges b,.hero-badges span{display:block;line-height:1.35}
+.hero-badges b{font-size:14px}.hero-badges span{font-size:12px;color:var(--gold);margin-top:4px}
+.stats{position:relative;margin-top:-90px;box-shadow:0 15px 35px #0005}
+.subjects{border-radius:18px;margin-left:3%;margin-right:3%}
+@media(max-width:900px){.hero{padding-top:90px}.hero-badges{right:3%;top:auto;bottom:10%}.portrait{border-radius:50% 50% 0 0}.stats{margin-top:-45px}}
+@media(max-width:600px){.hero-badges aside{width:165px;padding:13px}.hero-badges aside:first-child{display:none}}

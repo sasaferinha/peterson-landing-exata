@@ -1,0 +1,9 @@
+.about{display:block;min-height:auto;background:var(--dark2)}
+.about-copy{padding:100px max(7vw,40px);max-width:1080px;margin:0 auto;text-align:center}
+.about-copy>p:not(.overline){max-width:760px;margin:0 auto 30px}
+@media(max-width:600px){.about-copy{padding:70px 24px}}
+.meals{grid-template-columns:1fr}
+.meal-copy{max-width:980px;margin:0 auto;text-align:center;padding-bottom:45px}
+.meal-copy>p:not(.overline){max-width:700px;margin-left:auto;margin-right:auto}
+.meal-copy .actions{justify-content:center}
+.menu-cards,.meal-benefits{grid-column:1}

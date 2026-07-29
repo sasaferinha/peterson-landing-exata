@@ -1,0 +1,1 @@
+const h=document.querySelector('.hamb'),n=document.querySelector('nav');h.onclick=()=>n.classList.toggle('open');document.querySelectorAll('nav a').forEach(a=>a.onclick=()=>n.classList.remove('open'));document.querySelectorAll('.accord details').forEach(d=>d.ontoggle=()=>{if(d.open)document.querySelectorAll('.accord details').forEach(x=>{if(x!==d)x.open=false})});

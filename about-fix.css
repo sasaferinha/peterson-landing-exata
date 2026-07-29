@@ -24,3 +24,14 @@
 .floating-whatsapp b{font-size:14px}.floating-whatsapp span{font-size:12px}
 .actions.center{justify-content:center}.section-cta{display:inline-flex;margin-top:22px}
 @media(max-width:600px){.floating-whatsapp{right:12px;bottom:12px;padding:11px 16px}}
+
+/* Contornos retos e geométricos */
+.pill,
+.hamb,
+.hero-badges aside,
+.stats,
+.subjects,
+.menu-cards article,
+.testimonials blockquote,
+.final,
+.floating-whatsapp{border-radius:0}

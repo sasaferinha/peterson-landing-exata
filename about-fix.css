@@ -53,14 +53,14 @@
   .logo b{font-size:18px}.logo i{width:46px;height:46px;font-size:20px}
 }
 
-/* Hero integrada com retrato */
-.hero{grid-template-columns:52% 48%;background:var(--dark);isolation:isolate}
-.hero-copy{padding-right:0;z-index:3}
-.portrait{margin-left:-14vw;width:calc(100% + 14vw);border:0;border-radius:0;z-index:1}
-.portrait:before{background:linear-gradient(90deg,var(--dark) 0%,rgba(23,37,27,.94) 14%,rgba(23,37,27,.62) 31%,rgba(23,37,27,0) 54%),linear-gradient(0deg,var(--dark) 0%,rgba(23,37,27,0) 20%)}
+/* Moldura próxima ao texto */
+.hero{grid-template-columns:48% 52%;background:radial-gradient(circle at 75% 25%,#34412e 0,transparent 34%),var(--dark)}
+.hero-copy{padding-right:18px;z-index:2}
+.portrait{margin-left:-4vw;width:calc(100% + 4vw);border-left:1px solid var(--gold);border-radius:34% 0 0 0;z-index:1}
+.portrait:before{background:linear-gradient(90deg,var(--dark) 0,rgba(23,37,27,.55) 8%,transparent 20%)}
 .portrait img{object-position:center 18%}
 @media(max-width:900px){
   .hero{grid-template-columns:1fr}
-  .portrait{margin-left:0;width:100%;border-radius:0}
-  .portrait:before{background:linear-gradient(180deg,var(--dark) 0%,rgba(23,37,27,.35) 18%,rgba(23,37,27,0) 45%),linear-gradient(0deg,var(--dark) 0%,rgba(23,37,27,0) 18%)}
+  .portrait{margin-left:0;width:100%;border-left:0;border-radius:34% 34% 0 0}
+  .portrait:before{background:linear-gradient(180deg,var(--dark) 0,transparent 18%)}
 }
